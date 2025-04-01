@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Publikime</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="menu-element"><a class="cool-link" href="index.html">KREU</a></div>
+        <div class="menu-element"><a class="cool-link" href="about-us.html">RRETH NESH</a></div>
+        <div class="menu-element"><a class="cool-link" href="publications.html">PUBLIKIME</a></div>
+        <div class="menu-element"><img src="logo.svg" class="logo"/></div>
+        <div class="menu-element"><a class="cool-link">BLOG</a></div>
+        <div class="menu-element"><a class="cool-link" href="galery.html">GALERIA</a></div>
+        <div class="menu-element"><a class="cool-link" href="index.html#contactSection">KONTAKT</a></div>
+        <div class="menu-element"><a href="en/index.html" class="flag"><img src="Images/english.png"/></a></div>
+    </div>
+
+    <button id="menuButton" class="menu-button">☰</button>
+    <div id="mobileMenu" class="mobile-menu">
+        <ul>
+            <li><img src="logo.svg" class="logo"/></li>
+          <li><a href="index.html">Kreu</a></li>
+          <li><a href="about-us.html">Rreth Nesh</a></li>
+          <li><a href="publications.html">Publikime</a></li>
+          <li><a href="#contact">Blog</a></li>
+          <li><a href="galery.html">Galeria</a></li>
+          <li><a href="index.html#contactSection">Kontakt</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+<div class="publications"></div>
+
+
+<div class="publications-content">
+
+    <div class="header">
+
+        <form class="filterForm">
+            <span>Filter</span><br>
+            <select id="years" name="years">
+                <option value="Year">Viti - Te Gjithe</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+
+
+            </select>
+    
+    
+            <select id="author" name="author">
+                <option value="Author">Autor - Te Gjithe</option>
+                <option value="Adhurim Lazaj">Adhurim Lazaj</option>
+                <option value="Athina Llambro">Athina Llambro</option>
+                <option value="Aulona Veizi">Aulona Veizi</option>
+                <option value="Edmond Koka">Edmond Koka</option>
+                <option value="Elektra Spahiu">Elektra Spahiu</option>
+                <option value="Enver Brahimsulaj">Enver Brahimsulaj</option>
+                <option value="Hairi Ismaili">Hairi Ismaili</option>
+                <option value="Hipokrat Fiku">Hipokrat Fiku</option>
+                <option value="Jaho Nelaj">Jaho Nelaj</option>
+                <option value="Jordan Mërkuri">Jordan Mërkuri</option>
+                <option value="Lida Lazaj">Lida Lazaj</option>
+                <option value="Llambro Dhima">Llambro Dhima</option>
+                <option value="Lumturi Xhelilaj">Lumturi Xhelilaj</option>
+                <option value="Magdalena Cara">Magdalena Cara</option>
+                <option value="Mendim Baçaj">Mendim Baçaj</option>
+                <option value="Ornela Boçova">Ornela Boçova</option>
+                <option value="Ramo Merkohitaj">Ramo Merkohitaj</option>
+                <option value="Xhek Muka">Xhek Muka</option>
+                <option value="Zaim Veshaj">Zaim Veshaj</option>
+            </select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+            <button type="button" id="searchBtn">
+                <i class="fas fa-search" >Search</i>
+            </button>
+        </form>
+    
+    </div>
+
+
+
+
+    <table id="dataTable">
+        <thead class="underline">
+            <caption class="isCaption">Publications</caption>
+            <tr class="underline">
+                <th>TITLE</th>
+                <th>AUTOR</th>
+                <th>YEAR</th>
+                <th>TYPE</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr class="hoverChange">
+                <td data-label="Title"><a href="pub/2025/Raporti%20monitorimi%20i%20planit%20të%20integritetit.pdf" target="_blank" class="pubTitle cool-link">Raport Monitorimi I Planit te Integritetit 2022-2024</a></td>
+                <td data-label="Autor" class="leftBorder">Athina Llambro</td>
+                <td data-label="Year" class="leftBorder" >2025</td>
+                <td data-label="Type" class="leftBorder" >Raport</td>     
+                <td class="leftBorder" ><a class="cool-link" href="pub/2025/Raporti%20monitorimi%20i%20planit%20të%20integritetit.pdf" target="_blank">Shiko</a></td>               
+                </tr> 
+                <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2019/9.-Shёndetёsimi-me-teknika-in-vitro-i-kultivarёve-autoktonё-tё-hardhisё-Kallmet-Vlosh-Shesh-i-Zi-nga-infeksione-virale.pdf" target="_blank" class="pubTitle cool-link">Shёndetёsimi Me Teknika In Vitro I Kultivarёve Autoktonё Tё Hardhisё (Kallmet, Vlosh , Shesh I Zi) Nga Infeksione Virale</a></td>
+                    <td data-label="Autor" class="leftBorder">QTBB  </td>
+                    <td data-label="Year" class="leftBorder" >2019</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2019/9.-Shёndetёsimi-me-teknika-in-vitro-i-kultivarёve-autoktonё-tё-hardhisё-Kallmet-Vlosh-Shesh-i-Zi-nga-infeksione-virale.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2019/Raporti-Vjetor-2018.pdf" target="_blank" class="pubTitle cool-link">Raport Vjetor </a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2019</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2019/Raporti-Vjetor-2018.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2019/8.-Ndikimi-i-mbajtjes-së-kurorës-në-kultivarët-autokton-Pulëz-dhe-Karkanjoz..pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Mbajtjes Së Kurorës Në Kultivarët Autokton (Pulëz Dhe Karkanjoz).</a></td>
+                    <td data-label="Autor" class="leftBorder">Llambro Dhima</td>
+                    <td data-label="Year" class="leftBorder" >2019</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2019/8.-Ndikimi-i-mbajtjes-së-kurorës-në-kultivarët-autokton-Pulëz-dhe-Karkanjoz..pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2019/5.-Ndikimi-i-krasitjes-verore-në-cilësinë-e-prodhimit-në-kulturën-e-Kajsisë-.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Krasitjes Verore Në Cilësinë E Prodhimit Në Kulturën E Kajsisë</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro</td>
+                    <td data-label="Year" class="leftBorder" >2019</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2019/5.-Ndikimi-i-krasitjes-verore-në-cilësinë-e-prodhimit-në-kulturën-e-Kajsisë-.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2019/4.-Përshtatshmëria-e-kultivarëve-të-rinj-të-Shegës.pdf" target="_blank" class="pubTitle cool-link">Përshtatshmëria E Kultivarëve Të Rinj Të Shegës.</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2019</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2019/4.-Përshtatshmëria-e-kultivarëve-të-rinj-të-Shegës.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2019/6.-Influenca-e-rrallimit-të-lastarëve-në-zhvillimin-vegjetativ-e-prodhues-në-vreshtat-autoktone-për-prodhim-vere..pdf" target="_blank" class="pubTitle cool-link">Influenca E Rrallimit Të Lastarëve Në Zhvillimin Vegjetativ E Prodhues Në Vreshtat Autoktone Për Prodhim Vere.</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2019</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2019/6.-Influenca-e-rrallimit-të-lastarëve-në-zhvillimin-vegjetativ-e-prodhues-në-vreshtat-autoktone-për-prodhim-vere..pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2019/3.-Prova-të-shtimit-të-disa-nënshartesave-të-reja-që-shtohen-në -laboratorin-“in-vitro”.pdf" target="_blank" class="pubTitle cool-link">Prova Të Shtimit Të Disa Nënshartesave Të Reja Që Shtohen Në Laboratorin “in Vitro” (Viti I Dytë I Studimit) 2017-2018</a></td>
+                    <td data-label="Autor" class="leftBorder">Elektra Papakosta </td>
+                    <td data-label="Year" class="leftBorder" >2019</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2019/3.-Prova-të-shtimit-të-disa-nënshartesave-të-reja-që-shtohen-në -laboratorin-“in-vitro”.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2019/2.-Karakterizimi-morfologjik-i-aksesioneve-të-pemëve-frutore-autoktone-të-koleksionit-.pdf" target="_blank" class="pubTitle cool-link">Karakterizimi Morfologjik I Aksesioneve Të Pemëve Frutore Autoktone Të Koleksionit (Viti I Dytë I Studimit) 2017-2018</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2019</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2019/2.-Karakterizimi-morfologjik-i-aksesioneve-të-pemëve-frutore-autoktone-të-koleksionit-.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2019/11.-Efekti-i-ujitjes-në-vreshtë-kultivari-“Debinë-e-bardhe”-në-rritjen-e-rendimentit-dhe-përmirësimin-e-cilësisë-së-prodhimit..pdf" target="_blank" class="pubTitle cool-link">Efekti I Ujitjes Në Vreshtë, Kultivari “debinë E Bardhe” Në Rritjen E Rendimentit Dhe Përmirësimin E Cilësisë Së Prodhimit</a></td>
+                    <td data-label="Autor" class="leftBorder">Xhek Mukaj </td>
+                    <td data-label="Year" class="leftBorder" >2019</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2019/11.-Efekti-i-ujitjes-në-vreshtë-kultivari-“Debinë-e-bardhe”-në-rritjen-e-rendimentit-dhe-përmirësimin-e-cilësisë-së-prodhimit..pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2019/10.-Efekti-i-polenizimit-artificial-në-rendimentin-e-prodhimit-të-rrushit-dhe-cilësitë-e-tij-në-kultivarin-“Kallmet”..pdf" target="_blank" class="pubTitle cool-link">Efekti I Polenizimit Artificial, Në Rendimentin E Prodhimit Të Rrushit Dhe Cilësitë E Tij, Në Kultivarin “kallmet</a></td>
+                    <td data-label="Autor" class="leftBorder">Llambro Dhima</td>
+                    <td data-label="Year" class="leftBorder" >2019</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2019/10.-Efekti-i-polenizimit-artificial-në-rendimentin-e-prodhimit-të-rrushit-dhe-cilësitë-e-tij-në-kultivarin-“Kallmet”..pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2019/1.-Karakterizimi-ampelografik-agrobiologjik-i-kultivarëve-autoktone-te-hardhise-në-Bazën-EksperimentaleProdhuese.pdf" target="_blank" class="pubTitle cool-link">Karakterizimi Ampelografik & Agrobiologjik I Kultivarëve Autoktone Te Hardhise Në Bazën Eksperimentale/prodhuese Shamogjin.</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2019</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2019/1.-Karakterizimi-ampelografik-agrobiologjik-i-kultivarëve-autoktone-te-hardhise-në-Bazën-EksperimentaleProdhuese.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2018/Kultivimi-i-boronices-_compressed-1.pdf" target="_blank" class="pubTitle cool-link">Kultivimi I Boronicës</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2018</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2018/Kultivimi-i-boronices-_compressed-1.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2018/Kultivimi-i-Aronias.pdf" target="_blank" class="pubTitle cool-link">Kultivimi I Aronias</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2018</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2018/Kultivimi-i-Aronias.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2018/Kultivimi-i-Mjedres-1.pdf" target="_blank" class="pubTitle cool-link">Kultivimi Kultivimi I Mjedrës</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2018</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2018/Kultivimi-i-Mjedres-1.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2018/Kultivarët-e-Boronicës-1.pdf" target="_blank" class="pubTitle cool-link">Kultivimi I Boronicës</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2018</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2018/Kultivarët-e-Boronicës-1.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2018/3.-Përmirësimi-i-cilësisë-së-prodhimit-nëpërmjet-krasitjes-në-rrushin-e-tavolinës..pdf" target="_blank" class="pubTitle cool-link">Përmirësimi I Cilësisë Së Prodhimit Nëpërmjet Krasitjes Në Rrushin E Tavolinës.</a></td>
+                    <td data-label="Autor" class="leftBorder">Llambro Dhima, Xhek Mukaj</td>
+                    <td data-label="Year" class="leftBorder" >2018</td>
+                    <td data-label="Type" class="leftBorder" >Kerkim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2018/3.-Përmirësimi-i-cilësisë-së-prodhimit-nëpërmjet-krasitjes-në-rrushin-e-tavolinës..pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2018/4.-Ndikimi-i-kohës-dhe-shkallës-së-reduktimit-të-vegjetacionit-ne-treguesit-sasior-e-cilësor-të-prodhimit-të-hardhisë.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Kohës Dhe Shkallës Së Reduktimit Të Vegjetacionit Në Treguesit Sasior E Cilësor Të Prodhimit Të Hardhisë.</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2018</td>
+                    <td data-label="Type" class="leftBorder" >Kerkim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2018/4.-Ndikimi-i-kohës-dhe-shkallës-së-reduktimit-të-vegjetacionit-ne-treguesit-sasior-e-cilësor-të-prodhimit-të-hardhisë.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2018/2.-Ndikimi-i-formave-të-mbajtjes-së-lajthisë-në-cilësinë-e-prodhimit.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Formave Të Mbajtjes Së Lajthisë Në Cilësinë E Prodhimit.</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro</td>
+                    <td data-label="Year" class="leftBorder" >2018</td>
+                    <td data-label="Type" class="leftBorder" >Kerkim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2018/2.-Ndikimi-i-formave-të-mbajtjes-së-lajthisë-në-cilësinë-e-prodhimit.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2018/1.-Rehabilitimi-i-agrumishteve-të-dëmtuara-nga-ngricat.pdf" target="_blank" class="pubTitle cool-link">Rehabilitimi I Agrumishteve Të Dëmtuara Nga Ngricat</a></td>
+                    <td data-label="Autor" class="leftBorder">Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2018</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2018/1.-Rehabilitimi-i-agrumishteve-të-dëmtuara-nga-ngricat.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/9-2017-FLETE-PALOSJE-SHEGA-NAJA.pdf" target="_blank" class="pubTitle cool-link">Resurset Gjenetike Te Sheges.</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB </td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/9-2017-FLETE-PALOSJE-SHEGA-NAJA.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/9-2017-Studim-Qendrueshmeria-ndaj-ngricave-Lida.pdf" target="_blank" class="pubTitle cool-link">Qëndrueshmëria Ndaj Ngricave Në Tre Speciet E Agrumeve (Manderinë, Portokalle Dhe Limon)</a></td>
+                    <td data-label="Autor" class="leftBorder">Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/9-2017-Studim-Qendrueshmeria-ndaj-ngricave-Lida.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/8-2017-Studim-RAP.PERF_.-INFLUENCA-E-RRALLIMIT-TE-GJETHEVE.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Kohës Dhe Masës Së Rrallimit Të Gjetheve Në Sasinë Dhe Cilësinë E Prodhimit Të Hardhisë Në Kultivarët Shesh I Bardhë, Shesh I Zi Dhe Kallmet</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj, Ornela Boçova, Ramo Merkohitaj, Xhek Muka</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/8-2017-Studim-RAP.PERF_.-INFLUENCA-E-RRALLIMIT-TE-GJETHEVE.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/8-2017-FLETE-PALOSJE-Mendim-.pdf" target="_blank" class="pubTitle cool-link">Sensibilizim Për Rrezikun E Tharjes Së Bimëve Të Ullirit Nga Xylella Fastidiosa Në Vendin Tonë</a></td>
+                    <td data-label="Autor" class="leftBorder">Magdalena Cara, Jordan Mërkuri, Edmond Koka, Mendim Baçaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/8-2017-FLETE-PALOSJE-Mendim-.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/7-2017-Studim-RAP.PERF_.-INFLUENCA-E-RRALLIMIT-TE-LASTAREVE.pdf" target="_blank" class="pubTitle cool-link">Influenca E Rrallimit Të Lastarëve Në Zhvillimin Vegjetativ E Prodhues Në Vreshtat Autoktone Për Prodhim Vere</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj, Ornela Boçova, Ramo Merkohitaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/7-2017-Studim-RAP.PERF_.-INFLUENCA-E-RRALLIMIT-TE-LASTAREVE.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/7-2017-FLETE-PALOSJE-Kerkim-ne-Ferme.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Krasitjes Verore Në Treguesit Biologjik Dhe Agronomik Të Prodhimit Në Pjeshkën Nektarina</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB </td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/7-2017-FLETE-PALOSJE-Kerkim-ne-Ferme.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/6-2017-F.PALOSJE-Studim-Kajsi-NAJA.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Sipërfaqes Gjethore Në Cilësinë E Prodhimit Në Kulturën E Kajsisë</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB </td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/6-2017-F.PALOSJE-Studim-Kajsi-NAJA.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/6-2017-Studim-Per-prodhimin-e-veres-ADHURIM.pdf" target="_blank" class="pubTitle cool-link">Prova Të Vinifikimit Për Përmirësim Të Teknologjisë Së Prodhimit Të Verës</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/6-2017-Studim-Per-prodhimin-e-veres-ADHURIM.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/5-2017F.PALOSJE-Miza-e-Ullirit-MENDIM.pdf" target="_blank" class="pubTitle cool-link">Praktikat Që Përdoren Për Mbrojtjen E Prodhimit Të Ullirit Nga Miza E Ullirit</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/5-2017F.PALOSJE-Miza-e-Ullirit-MENDIM.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/5-2017-Studimi-Pershtat.-e-kultivareve-te-Sheges-shamogjin.pdf" target="_blank" class="pubTitle cool-link">Përshtatshmëria E Aksesioneve Të Shegës Të Mbjellë Në Koleksionin Autokton Të Pemëve Frutore</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro, Adhurim Lazaj, Lumturi Xhelilaj, Ornela Boçova</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/5-2017-Studimi-Pershtat.-e-kultivareve-te-Sheges-shamogjin.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/4-2017-Studimi-i-Qershise-kombinimi-i-ujitjes-me-plehrim.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Plehrimit Të Kombinur Me Ujitjen Në Kulturën E Qershisë</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro, Adhurim Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/4-2017-Studimi-i-Qershise-kombinimi-i-ujitjes-me-plehrim.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/4-2017-RAP.PERF_.-K.F-Miza-e-ullirt-Mendim.pdf" target="_blank" class="pubTitle cool-link">Miza E Ullirit </a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj, Llambro Dhima</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/4-2017-RAP.PERF_.-K.F-Miza-e-ullirt-Mendim.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/4-2017-F.PALOSJE-Ulli-AUTOKTON-AULONA-.pdf" target="_blank" class="pubTitle cool-link">Vlerësimi I Vajrave Të Ullirit Autokton Vlerësimi I Vajrave Të Ullirit Autokton</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB </td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/4-2017-F.PALOSJE-Ulli-AUTOKTON-AULONA-.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/3-2017-Siperfaqja-gjethore-ne-kajsi-2016.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Sipërfaqes Gjethore Në Cilësinë E Prodhimit Në Kulturën E Kajsisë</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro Adhurim Lazaj Ornela Boçova</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/3-2017-Siperfaqja-gjethore-ne-kajsi-2016.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/3-2017-RAP.-PARAPRAK-K.FERME-ADHURIM.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Kohës Dhe Shkallës Së Reduktimit Të Vegjetacionit Në Treguesit Sasior E Cilësor Të Prodhimit Të Hardhisë</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj Ramo Merkohitaj Ornela Bocova</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/3-2017-RAP.-PARAPRAK-K.FERME-ADHURIM.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/3-2017-F.PALOSJE-Qendruesh-Ngrica-Agrume-Lida.pdf" target="_blank" class="pubTitle cool-link">Qëndrueshmëria Ndaj Ngricave Në Tre Speciet E Agrumeve (Manderinë, Portokalle Dhe Limon)</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB </td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/3-2017-F.PALOSJE-Qendruesh-Ngrica-Agrume-Lida.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/2017-5-KARTE-TEKNOLOGJ.X.-Fastidiosa-MENDIM.pdf" target="_blank" class="pubTitle cool-link">Mbi Sëmundjen E Tharjes Së Shpejte Të Ullirit (Xylella Fastidiosa).</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/2017-5-KARTE-TEKNOLOGJ.X.-Fastidiosa-MENDIM.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/2017-4-KARTE-TEKNOLOGJ.-Plehrimi-Drufrutore-NAJA.pdf" target="_blank" class="pubTitle cool-link">Plehrimi Në Drufrutorë</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/2017-4-KARTE-TEKNOLOGJ.-Plehrimi-Drufrutore-NAJA.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/2017-6-KARTE-TEKNOLOGJIKE-GOJI-BERRY-LLAMBRO-.pdf" target="_blank" class="pubTitle cool-link">Goji Berry (Lycium Barbarum)</a></td>
+                    <td data-label="Autor" class="leftBorder">Llambro Dhima</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/2017-6-KARTE-TEKNOLOGJIKE-GOJI-BERRY-LLAMBRO-.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/2017-3-KARTE-TEKNOLOGJ.-Prodhimi-Fidane-AGRUME-LIDA.pdf" target="_blank" class="pubTitle cool-link">Prodhimi I Fidanëve Të Agrumeve</a></td>
+                    <td data-label="Autor" class="leftBorder">Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/2017-3-KARTE-TEKNOLOGJ.-Prodhimi-Fidane-AGRUME-LIDA.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/2017-2-KARTE-TEKNOLOGJIKE-SHEGA-NAJA.pdf" target="_blank" class="pubTitle cool-link">Teknologjia E Kultivimit Të Shegës</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/2017-2-KARTE-TEKNOLOGJIKE-SHEGA-NAJA.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/2017-1-KARTE-TEKNOLOGJ..-BreshK.-e-Kalif.-SAN-JOZE-LUME.pdf" target="_blank" class="pubTitle cool-link">Breshkëza E Kalifornisë (San-joze)</a></td>
+                    <td data-label="Autor" class="leftBorder">Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/2017-1-KARTE-TEKNOLOGJ..-BreshK.-e-Kalif.-SAN-JOZE-LUME.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/2-2017-RAP.PERF_.-K.FERME-LIDA.pdf" target="_blank" class="pubTitle cool-link">Rehabilitimi I Agrumishteve Të Dëmtuara Nga Ngricat</a></td>
+                    <td data-label="Autor" class="leftBorder">Lida Lazaj,  Llambro Dhima</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/2-2017-RAP.PERF_.-K.FERME-LIDA.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/2-2017-F.PALOSJE-ABC-E-VAJIT-TE-ULLIRIT.pdf" target="_blank" class="pubTitle cool-link">Abc-ja E Degustimit Të Vajit Të Ullirit Ekstra Të Virgjër.</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB </td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/2-2017-F.PALOSJE-ABC-E-VAJIT-TE-ULLIRIT.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/2-2017-Efekti-i-nënshartesa-Gis-6-Cab.6.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Nënshartesës Gisela 6 Dhe Cab 6 Në Zhvillim E Kurorës Në Kulturën E Qershisë</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB </td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/2-2017-Efekti-i-nënshartesa-Gis-6-Cab.6.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/15-2017-Studim-RAP.-PERF.-Monitorimi-i-X.fastidioza-Mendim.pdf" target="_blank" class="pubTitle cool-link">Monitorimi I Trakeobakteriozës (Xylella Fastidioza) Në Kulturën E Ullirit”</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj, Llambro Dhima</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/15-2017-Studim-RAP.-PERF.-Monitorimi-i-X.fastidioza-Mendim.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/14-2017-Studim-Për-kul.-e-Rinj-Shege-Adhurim.pdf" target="_blank" class="pubTitle cool-link">Përshtatshmëria E Kultivarëve Të Rinj Të Shegës</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/14-2017-Studim-Për-kul.-e-Rinj-Shege-Adhurim.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/13-2017-Studim-Perpuethmeria-N.Shartes-Agrume-.pdf" target="_blank" class="pubTitle cool-link">Vlerësimi I Afinitetit Në Mes Nënshartesave Më Të Rëndësishme Me Kultivarët Kryesor Të Agrumeve.</a></td>
+                    <td data-label="Autor" class="leftBorder">Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/13-2017-Studim-Perpuethmeria-N.Shartes-Agrume-.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/12-2017-Studim-Cv.-te-Ullirit-.pdf" target="_blank" class="pubTitle cool-link">Studimi Agrobiologjik I Kultivarëve Autokton Të Ullirit Në Koleksionin E Qttb Vlorë</a></td>
+                    <td data-label="Autor" class="leftBorder">Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/12-2017-Studim-Cv.-te-Ullirit-.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/11-2017-Studim-Vleresimi-i-Produktit-Perf.-cv.-Autokton-ULLI.pdf" target="_blank" class="pubTitle cool-link">Vlerësimi I Produktit Përfundimtar Të Kultivarëve Autokton Të Ullirit Në Bep</a></td>
+                    <td data-label="Autor" class="leftBorder">Aulona Veizi</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/11-2017-Studim-Vleresimi-i-Produktit-Perf.-cv.-Autokton-ULLI.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/10-2017-Studim-Raporti-VJETOR-lume.pdf" target="_blank" class="pubTitle cool-link">Produktiviteti I Prodhimit Të Ullishteve Intensive Për Vaj Me Kultivarët E Huaj Koroneiki, Arbequina Në Zonën E Vlorës</a></td>
+                    <td data-label="Autor" class="leftBorder">Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/10-2017-Studim-Raporti-VJETOR-lume.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/10-2017-MONITORIMI-I-X.-FASTIDIOSA-MENDIM.pdf" target="_blank" class="pubTitle cool-link">Monitorimi I Sëmundjes (Xylella Fastidioza)</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Bacaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/10-2017-MONITORIMI-I-X.-FASTIDIOSA-MENDIM.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/1-2017DHURIMFletepalosje-krasitja-e-hardhise.pdf" target="_blank" class="pubTitle cool-link">Sistemet E Krasitjes Dhe Të Mbajtjes Së Vreshtave Sipas Kultivarëve Dhe Destinacionit Të Prodhimit</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/1-2017DHURIMFletepalosje-krasitja-e-hardhise.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/1-2017-Studim-per-Kajsine.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Krasitjes Verore Në Cilësinë E Prodhimit Në Kulturën E Kajsisë</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro, Adhurim Lazaj, Ornela Boçova</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/1-2017-Studim-per-Kajsine.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/1-2017-RAPORT-PERF.-KF-VLORE-NEKTARINE-Dukat.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Krasitjes Verore Në Treguesit Biologjik E Agronomik Të Prodhimit Në Kulturën E Pjeshkës Nektarina</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro, Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/1-2017-RAPORT-PERF.-KF-VLORE-NEKTARINE-Dukat.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Verticioloza-e-ullirit.pdf" target="_blank" class="pubTitle cool-link">Verticioloza E Ullirit ( Verticilium Dahlia Kleb.)</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Verticioloza-e-ullirit.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Ushunjeza-e-dardhes.pdf" target="_blank" class="pubTitle cool-link">Ushunjëza E Dardhës ( Caliroa Limacine Retz.)</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Ushunjeza-e-dardhes.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Teknologji-e-mbjellljes-se-ullishtes.pdf" target="_blank" class="pubTitle cool-link">Karte Teknologjike Per Mbjelljen E Ullishteve</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Teknologji-e-mbjellljes-se-ullishtes.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Studimi-i-koleksionit-te-portokalles.pdf" target="_blank" class="pubTitle cool-link">Studime Në Germoplazmën E Agrumeve Mbi Përshtatshmërinë E Tyre Ndaj Kushteve Biotike Dhe Abiotike Të Shamogjinit</a></td>
+                    <td data-label="Autor" class="leftBorder">Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Studimi-i-koleksionit-te-portokalles.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Shartimi-i-gjelber-ne-agrume.pdf" target="_blank" class="pubTitle cool-link">Shartimii Me Maje Te Gjelber Ne Agrume</a></td>
+                    <td data-label="Autor" class="leftBorder">Lida Lazaj  </td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Shartimi-i-gjelber-ne-agrume.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/RAPORTI-PERFUNDIMTAR-VITI-2016.pdf" target="_blank" class="pubTitle cool-link">Raport Vjetor</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Raport </td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/RAPORTI-PERFUNDIMTAR-VITI-2016.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Projekti-2-kerkim-ne-ferme-Ndikimi-i-plehrimit.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Plehrimit Dhe Ujitjes Në Kulturën E Dardhës</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro, Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Projekt</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Projekti-2-kerkim-ne-ferme-Ndikimi-i-plehrimit.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Projekt-kerim-ne-ferme-ulli.pdf" target="_blank" class="pubTitle cool-link">Influenca E Plehërimit Në Kufizimin E Prodhimit Periodik Në Kulturën E Ullirit</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Hajri Ismaili</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Projekt</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Projekt-kerim-ne-ferme-ulli.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Plehrimi-i-agrumeve-me-mikroelemenete.pdf" target="_blank" class="pubTitle cool-link">Plehrimi I Agrumeve Me Mikroelemente</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Jaho Nelaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Plehrimi-i-agrumeve-me-mikroelemenete.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Pleherimi-i-qershise.pdf" target="_blank" class="pubTitle cool-link">Karte Teknologjike Per Plehrimin E Qershise</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Pleherimi-i-qershise.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/Karte Teknologjike"/Në Prodhimin E Kulturave Bërthamore" target="_blank" class="pubTitle cool-link">Athina Llambro</a></td>
+                    <td data-label="Autor" class="leftBorder">2016</td>
+                    <td data-label="Year" class="leftBorder" >Karte Teknologjike"</td>
+                    <td data-label="Type" class="leftBorder" >undefined</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/Karte Teknologjike"/Në Prodhimin E Kulturave Bërthamore" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/undefined/"Pleherimi-gjethor.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Plehrimit Gjethor</a></td>
+                    <td data-label="Autor" class="leftBorder">undefined</td>
+                    <td data-label="Year" class="leftBorder" >undefined</td>
+                    <td data-label="Type" class="leftBorder" >undefined</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/undefined/"Pleherimi-gjethor.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Përdorimi-Herb.-në-Pemtari-1.pdf" target="_blank" class="pubTitle cool-link">Përdorimi I Herbicideve Në Mbrojtje Të Pemëve Frutore Nga Barërat Konkurrues</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Përdorimi-Herb.-në-Pemtari-1.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Miza-e-ullirit.pdf" target="_blank" class="pubTitle cool-link">Miza E Ullirit ( Bractocera Oleae Gmelin)</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Miza-e-ullirit.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Krasitja-prodhuese-ne-ulli-KF.pdf" target="_blank" class="pubTitle cool-link">Krasitja Ne Kulturen E Ullirit</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Lida lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Studim </td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Krasitja-prodhuese-ne-ulli-KF.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Krasitja-e-pemeve-frutore-berthamore.pdf" target="_blank" class="pubTitle cool-link">Krasitja E Pemëve Frutore Bërthamore</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Krasitja-e-pemeve-frutore-berthamore.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Kerkime.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Plehrimit Organo-mineral Ne Prodhimin Sasior E Cilesor Te Vreshtave Per Prodhim Vere.</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Studim </td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Kerkime.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Gjethperdhredhja-e-pjeshkes.pdf" target="_blank" class="pubTitle cool-link">Gjethpërdredhësja E Pjeshkës</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Gjethperdhredhja-e-pjeshkes.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Flete-palosje-Projekti-e-Olive.pdf" target="_blank" class="pubTitle cool-link">Mbrojtja E Ullirit Nga Miza</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Flete-palosje-Projekti-e-Olive.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Flete-palosje-Miza-e-ullirit.pdf" target="_blank" class="pubTitle cool-link">Monitorimi I Mizës Së Ullirit Me Mjete Tik</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Flete-palosje-Miza-e-ullirit.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Flete-palosje-Menaxhimi-i-Tokes-ne-ulli.pdf" target="_blank" class="pubTitle cool-link">Menaxhimi I Tokës Në Ullishte</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Flete-palosje-Menaxhimi-i-Tokes-ne-ulli.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Flete-palosje-aklimatizimi.pdf" target="_blank" class="pubTitle cool-link">Teknika E Aklimatizimit In Vivo Te Nenshartesave Te Pemeve Frutore</a></td>
+                    <td data-label="Autor" class="leftBorder">Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Flete-palosje-aklimatizimi.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2016/Dorezuar-Pakete-per-prodhim-fid-ulli-me-nebulizim.pdf" target="_blank" class="pubTitle cool-link">Karte Teknologjike Per Prodhimin E Fidanave Te Ullirit Me Nebulizim</a></td>
+                    <td data-label="Autor" class="leftBorder">Lida Lazaj, Ramo Merkohitaj</td>
+                    <td data-label="Year" class="leftBorder" >2016</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2016/Dorezuar-Pakete-per-prodhim-fid-ulli-me-nebulizim.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/SYRI-I-PALLOIT.pdf" target="_blank" class="pubTitle cool-link">Syri I Palloit</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/SYRI-I-PALLOIT.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Studimi-i-format-e-mbjatjes-se-pemetores.pdf" target="_blank" class="pubTitle cool-link">Menaxhimi I Tokës Në Pemëtore</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro, Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Studimi-i-format-e-mbjatjes-se-pemetores.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/SEMUNDJET-E-BERTHAMOREVE-1.pdf" target="_blank" class="pubTitle cool-link">Sëmundjet Tek Kulturat Bërthamore</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj, Athina Llambro</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/SEMUNDJET-E-BERTHAMOREVE-1.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Roli-i-plehrimit-ne-mandarinishtet-e-reja.pdf" target="_blank" class="pubTitle cool-link">Roli I Plehërimit Organo –mineral Në Një Mandarinishte Intensive Për Prodhim Cilësor Të Qëndrueshëm</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Roli-i-plehrimit-ne-mandarinishtet-e-reja.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Resurset-gjenetike-autoktone.pdf" target="_blank" class="pubTitle cool-link">Resurset Gjenetike Të Pemëve Frutore</a></td>
+                    <td data-label="Autor" class="leftBorder">QTBB </td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Resurset-gjenetike-autoktone.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/RAPORT-KERKIM-NE-FERME-2015-_-VITI-I-PARE_.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Plehrimit Dhe Ujitjes Në Kulturën E Dardhës</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/RAPORT-KERKIM-NE-FERME-2015-_-VITI-I-PARE_.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Projekt-kerim-ne-ferme.pdf" target="_blank" class="pubTitle cool-link">Influenca E Plehërimit Në Kufizimin E Prodhimit Periodik Në Kulturën E Ullirit</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Hairi Ismaili,</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Projekt-kerim-ne-ferme.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Plehrimi-ne-vreshta_compressed.pdf" target="_blank" class="pubTitle cool-link">Plehrimi Në Vreshta</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Plehrimi-ne-vreshta_compressed.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Plehrimi-me-ujitje-ne-dardhe-1.pdf" target="_blank" class="pubTitle cool-link">Plehrimi I Kombinuar Me Ujitje Në Kulturën E Dardhës</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro, Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Plehrimi-me-ujitje-ne-dardhe-1.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Plehrimi-i-kulturave-drufrutore.pdf" target="_blank" class="pubTitle cool-link">Plehrimi Në Kulturat Drufutore</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro </td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Plehrimi-i-kulturave-drufrutore.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Pershtatshmeria-e-kultivareve-te-ullirit.pdf" target="_blank" class="pubTitle cool-link">Qëndrueshmëria E Disa Kultivarëve Ulliri Autokton Dhe Të Huaj Ndaj Kushteve Ekologjike Në Koleksionin E Bazës Eksperimentale</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Hairi Ismaili,  Athina Llambro, Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Pershtatshmeria-e-kultivareve-te-ullirit.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Pershtatshmeria-e-kultivareve-te-mandarinave.pdf" target="_blank" class="pubTitle cool-link">Përtshtatja E Kultivarëve Të Mandarinave Ndaj Kushteve Ekologjike Në Koleksionin E Bazës Eksperimentale</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Pershtatshmeria-e-kultivareve-te-mandarinave.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Pershtatshmeria-e-cv-te-ullirit-ne-pus-Mezin.pdf" target="_blank" class="pubTitle cool-link">Sjelljen E Kultivareve Në Koleksionin E Burmeve Gjenetike Të Ullirit Pus I Mezinit</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Hairi Ismaili,  Athina Llambro, Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Pershtatshmeria-e-cv-te-ullirit-ne-pus-Mezin.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Pakete-teknologjike-shtim-i-pemeve-frutore.pdf" target="_blank" class="pubTitle cool-link">Mënyrat E Shtimit Të Pemëve Frutore Me Metodën Tradicionale</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro </td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Pakete-teknologjike-shtim-i-pemeve-frutore.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Pakete-teknologjike-IN-Vitro.pdf" target="_blank" class="pubTitle cool-link">Teknologjia Inovative E Shtimit In Vitro Të Nenshartesave Drufrutore Bërthamore</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Pakete-teknologjike-IN-Vitro.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Menyrat-e-trajtimit-te-tokes-ne-ulli.pdf" target="_blank" class="pubTitle cool-link">Mënyrat E Trajtimit Së Tokës Ne Ullishte</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Menyrat-e-trajtimit-te-tokes-ne-ulli.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Menyrat-e-mbajtjes-se-tokes-ne-agrumishte.pdf" target="_blank" class="pubTitle cool-link">Menyrat E Mbajties Efektive Te Tokes Në Agrumishtet Intensive</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Menyrat-e-mbajtjes-se-tokes-ne-agrumishte.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Mbajtja-e-tokes-ne-ullishte.pdf" target="_blank" class="pubTitle cool-link">Percaktimi I Metodave Më Të Mira Të Mbajties Së Tokës Në Ullishte</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Mbajtja-e-tokes-ne-ullishte.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Karte-teknologjike-plehrimi-i-agrumeve.pdf" target="_blank" class="pubTitle cool-link">Plehrimi I Agrumeve</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Karte-teknologjike-plehrimi-i-agrumeve.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Karte-teknologjike-menyrat-e-mbajtjes-se-tokes-ne-ulli.pdf" target="_blank" class="pubTitle cool-link">Menaxhimi I Tokës Në Ullishte</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Karte-teknologjike-menyrat-e-mbajtjes-se-tokes-ne-ulli.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Fletepalosje-in-vitro-.pdf" target="_blank" class="pubTitle cool-link">Shtimi In Vitro I Nënshartesave</a></td>
+                    <td data-label="Autor" class="leftBorder">Elektra Spahiu</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Fletepalosje-in-vitro-.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Fletepalosje-2-Resurset-gjenetike.pdf" target="_blank" class="pubTitle cool-link">Resurset Autoktone Të Pemëve Frutore </a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Fletepalosje-2-Resurset-gjenetike.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2015/Fidana-hardhie.pdf" target="_blank" class="pubTitle cool-link">Paketë Teknologjike Për Prodhimin E Fidanёve Të Hardhisë. </a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2015</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2015/Fidana-hardhie.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/Udhezues"/Të Pemëve Frutore Bërthamore" target="_blank" class="pubTitle cool-link">Athina Llambro, Elektra Spahiu, Mendim Baçaj, Lumturi Xhelilaj</a></td>
+                    <td data-label="Autor" class="leftBorder">2014</td>
+                    <td data-label="Year" class="leftBorder" >Udhezues"</td>
+                    <td data-label="Type" class="leftBorder" >undefined</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/Udhezues"/Të Pemëve Frutore Bërthamore" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/undefined/"Udhezues-prot-prodh-pem-frut02_compressed.pdf" target="_blank" class="pubTitle cool-link">Udhëzues Për Protokollet E Prodhimit Të Integruar</a></td>
+                    <td data-label="Autor" class="leftBorder">undefined</td>
+                    <td data-label="Year" class="leftBorder" >undefined</td>
+                    <td data-label="Type" class="leftBorder" >undefined</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/undefined/"Udhezues-prot-prodh-pem-frut02_compressed.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2014/SEMUNDJET-E-BERTHAMOREVE.pdf" target="_blank" class="pubTitle cool-link">Semundjet Tek Kulturat Berthamore</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj, Athina Llambro</td>
+                    <td data-label="Year" class="leftBorder" >2014</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2014/SEMUNDJET-E-BERTHAMOREVE.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2014/seminar-janar-2014-ne-qttb-vlore-NXPowerLite-Copy.pdf" target="_blank" class="pubTitle cool-link">Shërbimet E Kohës Në Pemtari .</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB</td>
+                    <td data-label="Year" class="leftBorder" >2014</td>
+                    <td data-label="Type" class="leftBorder" >Dite Fushe</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2014/seminar-janar-2014-ne-qttb-vlore-NXPowerLite-Copy.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2014/Katalog-prodh-pem-frut_compressed.pdf" target="_blank" class="pubTitle cool-link">Katalog Për Kultivarët E Pemëve Frutore Bërthamore</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro, Elektra Spahiu, Mendim Baçaj, Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2014</td>
+                    <td data-label="Type" class="leftBorder" >Katalog</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2014/Katalog-prodh-pem-frut_compressed.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2014/DEMTUESIT-E-BERTHAMOREVE.pdf" target="_blank" class="pubTitle cool-link">Dëmtuesit E Bërthamorëve</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj, Athina Llambro</td>
+                    <td data-label="Year" class="leftBorder" >2014</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2014/DEMTUESIT-E-BERTHAMOREVE.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Riperteritja-e-ullishteve-te-vjetra.pdf" target="_blank" class="pubTitle cool-link">Rikonstruksioni I Ullishteve Të Degraduara Me Modelin E Krasitjes Ripërtëritëse</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Lumturi Xhelilaj, Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Riperteritja-e-ullishteve-te-vjetra.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Raport-VJETOR-departamenti-_compressed.pdf" target="_blank" class="pubTitle cool-link">Këshillimi Dhe Informacioni Bujqësor</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro </td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Raport Vjetor</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Raport-VJETOR-departamenti-_compressed.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Raport-perfundimtar-i-fermave-pilot.pdf" target="_blank" class="pubTitle cool-link">Krijimi E Fermave Pilot Te Mbjellë Me Fidana Të Kultivarit “kalinjot” Shtuar Me Copa Vegjetative</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro, Mendim Bacaj, Zaim Veshaj, Enver Brahimsulaj</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Raport-perfundimtar-i-fermave-pilot.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/RAPORT-PERFUNDIMTAR-2013-K.-F.-ulii-Berat.pdf" target="_blank" class="pubTitle cool-link">Teknikat Te Mbrojtjes Nga Miza E Ullirit ( B. Oleae) Ne Cv. Kokërr Madh I Beratit.”</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Bacaj, Ramo Merkohitaj</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/RAPORT-PERFUNDIMTAR-2013-K.-F.-ulii-Berat.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/RAPORT-PERF.-K.-në-F-2013-Miza-mesdheta-re.pdf" target="_blank" class="pubTitle cool-link">Monitorimi Dhe Luftimi I Mizës Mesdhetare Në Agrume</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Baçaj, Athina Llambro</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/RAPORT-PERF.-K.-në-F-2013-Miza-mesdheta-re.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Progr.-promovimi-vernave-.pdf" target="_blank" class="pubTitle cool-link">Promovimin E Verërave Të Varieteteve Autokton Të Rrushit</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Dite Fushe</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Progr.-promovimi-vernave-.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/PRO.P.DI_.FUSHE_.pdf" target="_blank" class="pubTitle cool-link">Krasitja Dhe Mirëmbajtia E Kurorës Së Ullirit</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Dite Fushe</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/PRO.P.DI_.FUSHE_.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Organizim-dite-fushe.pdf" target="_blank" class="pubTitle cool-link">Mbi Organizimin E Ditëve Të Fushës Në Q T T B Vlorë</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Dite Fushe</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Organizim-dite-fushe.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Krasitja-prodhuese-ne-ulli.pdf" target="_blank" class="pubTitle cool-link">Krasitja Prodhuese Ne Ulli</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Krasitja-prodhuese-ne-ulli.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Krasitja-e-ulirit.pdf" target="_blank" class="pubTitle cool-link">Krasitja Dhe Mirëmbajtia E Kurorës Në Kulturën E Ullirit.</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB </td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Krasitja-e-ulirit.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Flet-palosje-Miza-e-ullirit.pdf" target="_blank" class="pubTitle cool-link">Praktikat Qe Perdoren Per Mbrojtjen E Prodhimit Te Ullirit Nga Miza E Ullirit</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Bacaj</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Flet-palosje-Miza-e-ullirit.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Flet-palosja-e-mizes-mesdhetare-.pdf" target="_blank" class="pubTitle cool-link">Monitorimi Dhe Luftimi I Mizes Mesdhetare Ne Agrume. (Ceratitis Capitata Wied)</a></td>
+                    <td data-label="Autor" class="leftBorder">Mendim Bacaj</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Flet-palosja-e-mizes-mesdhetare-.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Ferma-pilot-Fshatin-Vezhdanisht-pronar-Fuat-Breshani.pdf" target="_blank" class="pubTitle cool-link">Ferma Pilot Ne Fshatin Vezhdanisht Me Pronar Fuat Breshani</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Ferma Pilot</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Ferma-pilot-Fshatin-Vezhdanisht-pronar-Fuat-Breshani.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Ferma-pilot-Fshati-Dukat-Bashkia-Orikum.pdf" target="_blank" class="pubTitle cool-link">Ferma Pilot Me Ulli Fshati Dukat Bashkia Orikum</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Ferma Pilot</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Ferma-pilot-Fshati-Dukat-Bashkia-Orikum.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2013/Ferma-pilot-e-ullirit-fshati-Çeprat-vlore.pdf" target="_blank" class="pubTitle cool-link">Parcela Pilot Ne Fshatin Çeprat Komuna (Shushicë)</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB</td>
+                    <td data-label="Year" class="leftBorder" >2013</td>
+                    <td data-label="Type" class="leftBorder" >Ferma Pilot</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2013/Ferma-pilot-e-ullirit-fshati-Çeprat-vlore.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2012/Raport-vjetor-2012-NXPowerLite-Copy_compressed-1.pdf" target="_blank" class="pubTitle cool-link">Raport Vjetor I Programit</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB</td>
+                    <td data-label="Year" class="leftBorder" >2012</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2012/Raport-vjetor-2012-NXPowerLite-Copy_compressed-1.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2012/Projekti-3-permbledhese.pdf" target="_blank" class="pubTitle cool-link">Studim, Projektim Dhe Modelim Ferme Ne Pemtari</a></td>
+                    <td data-label="Autor" class="leftBorder">Enver Brahimsulaj</td>
+                    <td data-label="Year" class="leftBorder" >2012</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2012/Projekti-3-permbledhese.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2012/projekti-2-permbledhese.pdf" target="_blank" class="pubTitle cool-link">Menaxhimi I Resurseve Gjenetike (Pemë Frutore, Hardhi, Ulli Dhe Agrume) Dhe Shtimi I Materialit Bimor</a></td>
+                    <td data-label="Autor" class="leftBorder">Adhurim Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2012</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2012/projekti-2-permbledhese.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2012/Projekti-1-permbledhese.pdf" target="_blank" class="pubTitle cool-link">Rezultatet E Përmbledhura Të Projekteve Të Vitit 2012 Dhe Propozim Projektet Për Vitin 2013</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB</td>
+                    <td data-label="Year" class="leftBorder" >2012</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2012/Projekti-1-permbledhese.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Tek.uji_.pleh_.pem_.intensive.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Ujitjes I Shoqëruar Me Plehërimin Kimik Të Tretshëm Në Prodhimin E Frutave Në Pemëtoret Intensive.</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj, Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Tek.uji_.pleh_.pem_.intensive.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Raport-vjetor-ulli-agrume.pdf" target="_blank" class="pubTitle cool-link">Teknologji Dhe Teknika Të Prodhimit Të Materialit Bimor Në Ulli Dhe Agrume</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Raport-vjetor-ulli-agrume.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Raport-Përfund-K.F-2011-krasitja-e-ullirit-compressed.pdf" target="_blank" class="pubTitle cool-link">Krasitja E Ullirit</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro, Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Raport-Përfund-K.F-2011-krasitja-e-ullirit-compressed.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Raport-perfundimtar-vreshte.pdf" target="_blank" class="pubTitle cool-link">Forma Optimale E Krasitjes Së Vreshtave Në Kultivarët E Hershëm Për Tryezë</a></td>
+                    <td data-label="Autor" class="leftBorder">Hipokrat Fiku</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Raport-perfundimtar-vreshte.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Raport-perfundimtar-departamenti-compressed-1.pdf" target="_blank" class="pubTitle cool-link">Raport Vjetor I Aktiviteteve Te Programit Te Keshillimit Dhe Informacionit Bujqesor</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Raport-perfundimtar-departamenti-compressed-1.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Prodhim-fidana.pdf" target="_blank" class="pubTitle cool-link">Prodhimi I Fidanëve Të Ullirit Me Anë Të Shartimit.</a></td>
+                    <td data-label="Autor" class="leftBorder">Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Prodhim-fidana.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Perdorimi-i-herbicideve-ulli.pdf" target="_blank" class="pubTitle cool-link">Përdorimi I Herbicideve Në Mbrojtje Të Kulturës Së Ullirit</a></td>
+                    <td data-label="Autor" class="leftBorder">Enver Brahimsulaj</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Perdorimi-i-herbicideve-ulli.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Perdorimi-i-herbicideve-në-Vreshtari.pdf" target="_blank" class="pubTitle cool-link">Përdorimi I Herbicideve Në Mbrojtje Të Kulturës Së Hardhis</a></td>
+                    <td data-label="Autor" class="leftBorder">Enver Brahimsulaj</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Perdorimi-i-herbicideve-në-Vreshtari.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Përdorimi-Herb.-në-Pemtari.pdf" target="_blank" class="pubTitle cool-link">Përdorimi I Herbicideve Në Mbrojtje Të Pemëve Frutore Nga Barërat Konkurrues</a></td>
+                    <td data-label="Autor" class="leftBorder">Enver Brahimsulaj</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Përdorimi-Herb.-në-Pemtari.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Fletepalosje-faqe2-Krasitja-ne-vreshte_compressed.pdf" target="_blank" class="pubTitle cool-link">Forma Optimale E Krasitjes Ne Kultivarin e Hershem “victoria”</a></td>
+                    <td data-label="Autor" class="leftBorder">QTTB  </td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Fletepalosje-faqe2-Krasitja-ne-vreshte_compressed.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Fletepalosje-faqe1krasitja-ne-vreshte_compressed.pdf" target="_blank" class="pubTitle cool-link">Krasitja Dimëror E Në Kultivarin E Rrushit “victoria”</a></td>
+                    <td data-label="Autor" class="leftBorder">Hipokrat Fiku</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Fletepalosje-faqe1krasitja-ne-vreshte_compressed.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Fletepalosje-2011-krasitja-ullirit-_compressed.pdf" target="_blank" class="pubTitle cool-link">Krasitja Ne Kulturen E Ullirit.</a></td>
+                    <td data-label="Autor" class="leftBorder">Athina Llambro, Lumturi Xhelilaj</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Fletepalosje-2011-krasitja-ullirit-_compressed.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Flete-palosje-2011elemente-teknol.ne-ulli-compressed.pdf" target="_blank" class="pubTitle cool-link">Zbatimi I Elementëve Të Veçantë Teknologjikë Në Ullishtet Intensive</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Flete-palosje-2011elemente-teknol.ne-ulli-compressed.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Fletepalosje-2011.uj_.dhe-pl.pem_.int_compressed.pdf" target="_blank" class="pubTitle cool-link">Zbatimi I Elementëve Të Veçantë Teknologjikë Në Pemëtoret Intensive</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj</td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Fletepalosje</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Fletepalosje-2011.uj_.dhe-pl.pem_.int_compressed.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2011/Elemente-teknologike-ne-ulli.pdf" target="_blank" class="pubTitle cool-link">Elemente Teknologjike Ne Ulli</a></td>
+                    <td data-label="Autor" class="leftBorder">Zaim Veshaj </td>
+                    <td data-label="Year" class="leftBorder" >2011</td>
+                    <td data-label="Type" class="leftBorder" >Raport</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2011/Elemente-teknologike-ne-ulli.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/17-2017-Studimi-Ornela-1.pdf" target="_blank" class="pubTitle cool-link">Ecuria E Parametrave Fiziko-kimikë Të Frutave Dhe Lëngut Të Frutave Gjatë Proçesit Të Maturimit Dhe Ruatjes</a></td>
+                    <td data-label="Autor" class="leftBorder">Ornela Boçova</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/17-2017-Studimi-Ornela-1.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/2017-7-KARTE-TEKNOLOGJ.-Reabilit.-Ngricat-Agrume-LIDA.pdf" target="_blank" class="pubTitle cool-link">Rehabilitimi I Agrumishteve Të Dëmtuara Nga Ngricat (Rezultate Të Studimit Një Vjeçar)</a></td>
+                    <td data-label="Autor" class="leftBorder">Lida Lazaj</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Karte Teknologjike</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/2017-7-KARTE-TEKNOLOGJ.-Reabilit.-Ngricat-Agrume-LIDA.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              <tr class="hoverChange">
+                    <td data-label="Title"><a href="pub/2017/16-2017-Studim-Mbajtja-e-Kurores-PulezKarkanjoz-Llambro-.pdf" target="_blank" class="pubTitle cool-link">Ndikimi I Mbajtjes Së Kurorës Në Kultivarët Autokton (Pulëz Dhe Karkanjoz)</a></td>
+                    <td data-label="Autor" class="leftBorder">Llambro Dhima</td>
+                    <td data-label="Year" class="leftBorder" >2017</td>
+                    <td data-label="Type" class="leftBorder" >Studim</td>     
+                    <td class="leftBorder" ><a class="cool-link" href="pub/2017/16-2017-Studim-Mbajtja-e-Kurores-PulezKarkanjoz-Llambro-.pdf" target="_blank">Shiko</a></td>               
+                    </tr> 
+              
+          
+            
+
+
+        </tbody>
+    </table>
+
+    <p class="notFound">We could not find any article for the given criteria.</p>
+
+
+
+
+
+</div>
+
+
+  
+
+
+
+   
+
+<script src="script.js"></script>
+
+    <script>
+       const searchButton = document.getElementById("searchBtn");
+
+
+        searchButton.addEventListener('click', search);
+        const rows = document.querySelectorAll('tr.hoverChange');
+        let firstRow = rows[1].getElementsByTagName("td")
+        console.log(firstRow[1]. innerHTML)
+
+
+        function search()
+        {
+            resetTable()
+            event.preventDefault();
+
+            const yearsSelect = document.getElementById('years');
+            const authorSelect = document.getElementById('author');
+            
+            // Get the selected values
+            const selectedYear = yearsSelect.value;
+            const selectedAuthor = authorSelect.value;
+
+            console.log('Selected Author', selectedAuthor);
+            console.log('Selected Year', selectedYear);
+
+            
+
+
+            if(selectedYear == 'Year')
+            {
+                if(selectedAuthor == 'Author')
+                {
+                    resetTable()
+                }
+                else
+                {
+                    for (i = 0; i < rows.length; i++) {
+                    td = rows[i].getElementsByTagName("td");
+                    if (td.length > 0) {
+                        var author = td[1].textContent || td[1].innerText;
+                    
+                        if (author.includes(selectedAuthor)) {
+                            rows[i].style.display = "";
+                        } else {
+                            rows[i].style.display = "none";
+                        }
+                    }
+                              
+                }
+        
+                }
+            }
+            else 
+            {
+                if(selectedAuthor == 'Author')
+                {
+                    for (i = 0; i < rows.length; i++) {
+                    td = rows[i].getElementsByTagName("td");
+                    if (td.length > 0) {
+                        var year = td[2].textContent || td[2].innerText;
+                    
+                        if (year.includes(selectedYear)) {
+                            rows[i].style.display = "";
+                        } else {
+                            rows[i].style.display = "none";
+                        }
+                        }       
+                    }
+                    
+                }
+                else 
+                {
+                    for (i = 0; i < rows.length; i++) {
+                    td = rows[i].getElementsByTagName("td");
+                    if (td.length > 0) {
+                        var year = td[2].textContent || td[2].innerText;
+                        var author = td[1].textContent || td[1].innerText;
+
+                        if (year.includes(selectedYear) && author.includes(selectedAuthor)) {
+                            rows[i].style.display = "";
+                        } else {
+                            rows[i].style.display = "none";
+                        }
+                        }       
+                    }
+                    
+                }
+            }
+
+
+
+
+
+    
+            checkEmpty()
+
+        }
+
+
+        function resetTable()
+        {
+            const rows = document.querySelectorAll('.hoverChange');
+            rows.forEach(row => {
+                    row.style.display = 'table-row'
+                })
+        }
+        
+
+
+        function checkEmpty()
+        {
+            let count = 0
+            const rows = document.querySelectorAll('.hoverChange');
+            var paragraph = document.querySelector('p'); // Selects the first paragraph
+
+
+            for(let i =0; i< rows.length; i++)
+            {
+                if(rows[i].style.display == 'none')
+                    {
+                     
+                        count++;
+                    }
+            }
+            if(count == 7)
+            {
+                paragraph.style.display = 'block';
+            }
+            else 
+            {
+                paragraph.style.display = 'none';
+            }
+
+            console.log(count)
+        }
+        
+        
+        
+    
+    </script>
+
+</body>
+
+
+
+</html>
